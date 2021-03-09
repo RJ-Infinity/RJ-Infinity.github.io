@@ -1,0 +1,23 @@
+.titlebar{
+	width: 100%;
+	background-color: #ececec;
+	border-top: 5px solid #f38c01;
+	height: 50px;
+	box-shadow: rgb(97, 97, 128) 0 25px;
+}
+body{
+	margin: 0;
+}
+.burgerbar{
+	top: calc(50% - 25px / 2);
+	position: relative;
+}
+.burgerbar1,.burgerbar2,.burgerbar3{
+	width: 35px;
+	background-color: black;
+	height: 5px;
+	position: relative;
+	display: block;
+	border-radius: 2.5px;
+	margin-bottom: 5px
+}

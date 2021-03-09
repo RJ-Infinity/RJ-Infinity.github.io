@@ -9,17 +9,25 @@
 			background-color: black;
 		}
 		h1,h3{
+			margin-top: 0;
 			text-align: center;
-			color: aliceblue;
+			color: #f7f7f7;
 			font-family: 'Roboto', sans-serif;
+			position: relative;
 		}
 		.about,.reasons{
-			background-color: aliceblue;
+			background-color: #f7f7f7;
 			width: 20em;
-			position: absolute;
-			bottom: 0;
+			position: relative;
+			/* bottom: 0; */
 			padding-left: 5px;
 			height: 100%;
+			top: 0;
+		}
+		@media only screen and (max-width: 850px){
+			.boxes{
+				width: 20em;
+			}
 		}
 		ul{
 			padding-left: 1em;
@@ -32,7 +40,11 @@
 			display: inline;
 		}
 		.boxes{
-			height: min-content;
+			height: 100vh;
+			top: 0;
+			left: 0;
+			position: absolute;
+			width: 100%;
 		}
 		.list{
 			display: grid;
@@ -55,21 +67,19 @@
 	</style>
 </head>
 <body>
-	<h1>404 ERROR</h1>
-	<h3>you're lost, <a href="/">HOME?</a></h3>
 	<div class="boxes">
 		<div class="about" style="left: 0;">
 			<h2>What is a 404 ERROR?</h2>
 			<p>A 404 error is a http error and could either refer to</p>
-				<ul>
-					<li>HTTP 404</li>
-					<li>404 Not Found</li>
-					<li>404</li>
-					<li>Page Not Found</li>
-					<li>Server Not Found</li>
-				</ul>
+			<ul>
+				<li>HTTP 404</li>
+				<li>404 Not Found</li>
+				<li>404</li>
+				<li>Page Not Found</li>
+				<li>Server Not Found</li>
+			</ul>
 			<p>
-				theses all mean basicly the sae thing the web page you are looking for cannot be found this could be for a number of reasons which you can see in antother box on this page
+				theses all mean basicly the same thing, the web page you are looking for cannot be found this could be for a number of reasons which you can see in antother box on this page
 			</p>
 			<p>for more info about a 404 ERROR check <a href="https://en.wikipedia.org/wiki/HTTP_404">the wikipidia page on it</a></p>
 		</div>
@@ -86,8 +96,10 @@
 				<p class="listitem l">● this page no longer exists</p>
 				<p class="listitem r">try <a href="https://web.archive.org/web/*/https:/rj-infinity.github.io/">archive.org</a> for a older coppy</p>
 			</div>
-			<p style="margin-top: 0;"><a href="https://web.archive.org/web/*/https:/rj-infinity.github.io/">archive.org</a> lets you see an older version of the page so it will help for other isuues like someone has stolen a hard drive of github (hosts this site)</p>
+			<p style="margin-top: 0;"><a href="https://web.archive.org/web/*/https:/rj-infinity.github.io/">archive.org</a> lets you see an older version of the page so it will help for other isuues like someone stealing a hard drive of githubs (Github hosts this site)</p>
 		</div>
 	</div>
+	<h1>404 ERROR</h1>
+	<h3>you're lost, <a href="/">HOME?</a></h3>
 </body>
 </html>
